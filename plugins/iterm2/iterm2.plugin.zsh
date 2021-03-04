@@ -64,5 +64,8 @@ if [[ "$OSTYPE" == darwin* ]] && [[ -n "$ITERM_SESSION_ID" ]] ; then
   function iterm2_tab_color_reset() {
     _iterm2_command "6;1;bg;*;default"
   }
+  ### iTerm2 Shell integration ###
+  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+  ################################
 
 fi
